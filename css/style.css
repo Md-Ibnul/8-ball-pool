@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@keyframes slide-8 {
+    from{
+        left: 550px;
+        top: 200px;
+    }
+    to{
+        left: 700px;
+        top: 270px;
+    }
+}
+@keyframes slide-7 {
+    from{
+        left: 550px;
+        top: 160px;
+    }
+    to{
+        left: 720px;
+        top: 95px;
+    }
+}
+@keyframes slide-4 {
+    from{
+        left: 520px;
+        top: 140px;
+    }
+    to{
+        left: 640px;
+        top: 65px;
+    }
+}
+@keyframes slide-5 {
+    from{
+        left: 520px;
+        top: 180px;
+    }
+    to{
+        left: 650px;
+        top: 180px;
+    }
+}
+@keyframes slide-6 {
+    from{
+        left: 520px;
+        top: 220px;
+    }
+    to{
+        left: 620px;
+        top: 270px;
+    }
+}
+
+@keyframes slide-2 {
+    from{
+        left: 490px;
+        top: 160px;
+    }
+    to{
+        left: 530px;
+        top: 110px;
+    }
+}
+@keyframes slide-3 {
+    from{
+        left: 490px;
+        top: 200px;
+    }
+    to{
+        left: 540px;
+        top: 240px;
+    }
+}
+@keyframes slide-1 {
+    from{
+        left: 460px;
+    }
+    to{
+        left: 500px;
+    }
+}
+.stage{
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+}
+.stick{
+    position: absolute;
+    top: 100px;
+    left: -300px;
+    transition: transform 1s;
+}
+.stick img{
+    width: 550px;
+}
+.stage:hover .stick{
+    transform: translateX(222px);
+}
+
+.ball{
+    position: absolute;
+    top: 180px;
+    left: 600px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    line-height: 40px;
+    background-color: black;
+}
+
+#ball-1{
+    left: 460px;
+    background-color: crimson;
+    box-shadow: 2px 2px 2px #333;
+    z-index: 99999999;
+}
+.stage:hover #ball-1{
+    animation-name: slide-1;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+#ball-2{
+    left: 490px;
+    top: 160px;
+    background-color:lime;
+    box-shadow: 2px 2px 2px #333;
+    z-index: 999;
+}
+.stage:hover #ball-2{
+    animation-name: slide-2;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+#ball-3{
+    left: 490px;
+    top: 200px;
+    background-color:magenta;
+    box-shadow: 2px 2px 2px #333;
+    z-index: 999;
+}
+.stage:hover #ball-3{
+    animation-name: slide-3;
+    animation-duration: 2s;
+    animation-delay: 1.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+#ball-4{
+    left: 520px;
+    top: 140px;
+    background-color:darkturquoise;
+    box-shadow: 2px 2px 2px #333;
+    z-index: 99;
+}
+.stage:hover #ball-4{
+    animation-name: slide-4;
+    animation-duration: 2s;
+    animation-delay: 1.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+#ball-5{
+    left: 520px;
+    top: 180px;
+    background-color:orange;
+    box-shadow: 2px 2px 2px #333;
+    z-index: 99;
+}
+.stage:hover #ball-5{
+    animation-name: slide-5;
+    animation-duration: 2s;
+    animation-delay: 1.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+#ball-6{
+    left: 520px;
+    top: 220px;
+    color: black;
+    background-color:white;
+    box-shadow: 2px 2px 2px #333;
+    z-index: 99;
+}
+.stage:hover #ball-6{
+    animation-name: slide-6;
+    animation-duration: 2s;
+    animation-delay: 1.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+#ball-7{
+    left: 550px;
+    top: 160px;
+    background-color:midnightblue;
+    box-shadow: 2px 2px 2px #333;
+}
+.stage:hover #ball-7{
+    animation-name: slide-7;
+    animation-duration: 3s;
+    animation-delay: 1.4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+#ball-8{
+    left: 550px;
+    top: 200px;
+    background-color:black;
+    box-shadow: 2px 2px 2px #333;
+}
+.stage:hover #ball-8{
+    animation-name: slide-8;
+    animation-duration: 3s;
+    animation-delay: 1.4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
